@@ -8,12 +8,12 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-body{
+body {
     background-color: rgb(178, 240, 219);
     font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2{
+h1, h2 {
     text-align: center;
     
 }
@@ -32,19 +32,22 @@ table {
     border: 3px solid rgb(54, 133, 107);
     margin: 0 auto;
     width: 50%;
+    border-collapse: collapse;
 }
 
 td {
-    border-collapse: collapse;
-    border-top: 1px solid;
-    padding-right: 10px;
+    border-top: 1px solid rgb(54, 133, 107);
+    padding: 5px;
 }
 
-td:first-child span{
+td:not(:last-child) {
+    text-align: center;
+}
+
+td:first-child span {
     color: lime;
     background-color: black;
     font-family: monospace;
-    
 }
 
 th {
